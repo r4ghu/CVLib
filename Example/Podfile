@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CVLib_Example' do
+  pod 'CVLib', :path => '../'
+
+  target 'CVLib_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
