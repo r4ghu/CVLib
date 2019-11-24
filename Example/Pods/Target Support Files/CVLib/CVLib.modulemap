@@ -1,0 +1,6 @@
+framework module CVLib {
+  umbrella header "CVLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

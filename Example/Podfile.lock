@@ -1,0 +1,16 @@
+PODS:
+  - CVLib (0.1.0)
+
+DEPENDENCIES:
+  - CVLib (from `../`)
+
+EXTERNAL SOURCES:
+  CVLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CVLib: 4070588be61be50b92f08beada242c6c57708f96
+
+PODFILE CHECKSUM: 3f7d05d8478135a1dcd8bd17d0acc9905edfbc08
+
+COCOAPODS: 1.8.4
