@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		03077539FA18F318B952AA2C66073630 /* Pods-CVLib_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 578F2FE63CF12173FF33F913059A1AD9 /* Pods-CVLib_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0315D95BB0E86204889EFA173B2BD19B /* CVLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 803F68C1B0BF3B43143376F94F41D56E /* CVLib-dummy.m */; };
-		27272DD7B0D10167D935073EE7DFD597 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C765D8A442B2C3307E0CDA79C61A5992 /* ReplaceMe.swift */; };
+		0803E2BB238A5FA9004BA4B9 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0803E2BA238A5FA9004BA4B9 /* UIImageViewExtensions.swift */; };
 		4C5441A293B5E92908DC4D68C1A0C8BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		A2EABF551355F20852532A3E80A8F21B /* Pods-CVLib_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC7EAC156C2B7FC959754AC0DB4F7 /* Pods-CVLib_Tests-dummy.m */; };
 		AB58DA1A6CEF41DB00FA04495869484D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -37,8 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0171D2D0ACF9A536D431DC34F6B9063E /* Pods_CVLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CVLib_Example.framework; path = "Pods-CVLib_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0171D2D0ACF9A536D431DC34F6B9063E /* Pods_CVLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CVLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DAC7EAC156C2B7FC959754AC0DB4F7 /* Pods-CVLib_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CVLib_Tests-dummy.m"; sourceTree = "<group>"; };
+		0803E2BA238A5FA9004BA4B9 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageViewExtensions.swift; path = CVLib/Classes/UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		2CF1720181108CAC64A4F0D4CD31AFFF /* CVLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CVLib-Info.plist"; sourceTree = "<group>"; };
 		2DA77364B9AF2659C7ADD7188DA8E60A /* Pods-CVLib_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CVLib_Tests.modulemap"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -54,17 +55,16 @@
 		800B7518EE6B421104C2EC8BB64EB683 /* Pods-CVLib_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CVLib_Example.modulemap"; sourceTree = "<group>"; };
 		803F68C1B0BF3B43143376F94F41D56E /* CVLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CVLib-dummy.m"; sourceTree = "<group>"; };
 		83DCD88EBB3675B440F9283A40E0F8A3 /* Pods-CVLib_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CVLib_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		920CB5BAA6FBA66946AA0A8E3BC551ED /* Pods_CVLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CVLib_Tests.framework; path = "Pods-CVLib_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		920CB5BAA6FBA66946AA0A8E3BC551ED /* Pods_CVLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CVLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		985ACAE4914172A2537403A3ABAEF2B7 /* CVLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CVLib-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F3D70A274A341EA07F9C9BBCE3570D9 /* CVLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CVLib.framework; path = CVLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6766F5F10C1EBF79FEE99940F87CF0E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F3D70A274A341EA07F9C9BBCE3570D9 /* CVLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CVLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6766F5F10C1EBF79FEE99940F87CF0E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AA63DCA68F6751A12AE1B7484F7B9B7E /* Pods-CVLib_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CVLib_Example-dummy.m"; sourceTree = "<group>"; };
-		AD2A096A692D68207A6AC88CC4F80E10 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		AD2A096A692D68207A6AC88CC4F80E10 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B37C6016ACD1638865E52A0E88C0D144 /* Pods-CVLib_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CVLib_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		C12A49FCF60EC45F6DE21343FD591F4E /* Pods-CVLib_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CVLib_Tests-Info.plist"; sourceTree = "<group>"; };
-		C765D8A442B2C3307E0CDA79C61A5992 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = CVLib/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		D62908D9D3C7B3BB0FEF7BFB011DAB48 /* CVLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CVLib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D62908D9D3C7B3BB0FEF7BFB011DAB48 /* CVLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CVLib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DABA9A176C32B3656D27BBBB60F215B8 /* Pods-CVLib_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CVLib_Example-Info.plist"; sourceTree = "<group>"; };
 		DFAA05E96F1FE0294DB65FE74D1CA6B3 /* Pods-CVLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CVLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E3601F56BB3A945C18DED384850F18BF /* Pods-CVLib_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CVLib_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -116,9 +116,9 @@
 		68C27796947148F05A9BB5D23B689CB2 /* CVLib */ = {
 			isa = PBXGroup;
 			children = (
-				C765D8A442B2C3307E0CDA79C61A5992 /* ReplaceMe.swift */,
 				80765BF07ED6C711D86E05FD245A1AF0 /* Pod */,
 				2B12E2EF7CD73C12846D69E9310C8DCB /* Support Files */,
+				0803E2BA238A5FA9004BA4B9 /* UIImageViewExtensions.swift */,
 			);
 			name = CVLib;
 			path = ../..;
@@ -315,6 +315,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					6E1A88534A6AB407BC53B19478551327 = {
+						LastSwiftMigration = 1120;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -373,8 +378,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0803E2BB238A5FA9004BA4B9 /* UIImageViewExtensions.swift in Sources */,
 				0315D95BB0E86204889EFA173B2BD19B /* CVLib-dummy.m in Sources */,
-				27272DD7B0D10167D935073EE7DFD597 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 34A93A2D46FC91E8FC0BBCBB2E304916 /* CVLib.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -507,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 34A93A2D46FC91E8FC0BBCBB2E304916 /* CVLib.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -527,6 +534,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -587,8 +595,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
