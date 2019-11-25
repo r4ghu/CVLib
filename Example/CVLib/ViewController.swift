@@ -14,16 +14,29 @@ import CVLib
 class ViewController: UIViewController {
 
     // Declare or connect an image view. Be sure to set the width/height constraints to the same value
-    @IBOutlet weak var testImageView: UIImageView!
+    //@IBOutlet weak var testImageView: UIImageView!
+    @IBOutlet var cameraView: CameraView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view.
         
-        // Step 3: Call the roundViewWidth method on your imageView
-        testImageView.roundViewWith(borderColor: UIColor.white, borderWidth: 5.0)
     }
-
+    
+    // Start session
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // MARK: Step 2 - Start Camera
+        self.cameraView.start()
+    }
+    
+    // Stop session
+    override func viewWillDisappear(_ animated: Bool) {
+        // MARK: Step 3 - Stop Camera
+        self.cameraView.stop()
+        super.viewWillDisappear(animated)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

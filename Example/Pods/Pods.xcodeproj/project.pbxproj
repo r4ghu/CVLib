@@ -10,6 +10,9 @@
 		03077539FA18F318B952AA2C66073630 /* Pods-CVLib_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 578F2FE63CF12173FF33F913059A1AD9 /* Pods-CVLib_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0315D95BB0E86204889EFA173B2BD19B /* CVLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 803F68C1B0BF3B43143376F94F41D56E /* CVLib-dummy.m */; };
 		0803E2BB238A5FA9004BA4B9 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0803E2BA238A5FA9004BA4B9 /* UIImageViewExtensions.swift */; };
+		082F3FC5238BB51300CEEE6A /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F3FC4238BB51300CEEE6A /* PreviewView.swift */; };
+		082F3FC7238BB54E00CEEE6A /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F3FC6238BB54E00CEEE6A /* CameraView.swift */; };
+		082F3FCA238BB58D00CEEE6A /* CameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 082F3FC9238BB58D00CEEE6A /* CameraView.xib */; };
 		4C5441A293B5E92908DC4D68C1A0C8BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		A2EABF551355F20852532A3E80A8F21B /* Pods-CVLib_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC7EAC156C2B7FC959754AC0DB4F7 /* Pods-CVLib_Tests-dummy.m */; };
 		AB58DA1A6CEF41DB00FA04495869484D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -40,6 +43,9 @@
 		0171D2D0ACF9A536D431DC34F6B9063E /* Pods_CVLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CVLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DAC7EAC156C2B7FC959754AC0DB4F7 /* Pods-CVLib_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CVLib_Tests-dummy.m"; sourceTree = "<group>"; };
 		0803E2BA238A5FA9004BA4B9 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageViewExtensions.swift; path = CVLib/Classes/UIImageViewExtensions.swift; sourceTree = "<group>"; };
+		082F3FC4238BB51300CEEE6A /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PreviewView.swift; path = CVLib/Classes/Views/PreviewView.swift; sourceTree = "<group>"; };
+		082F3FC6238BB54E00CEEE6A /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = CVLib/Classes/Views/CameraView.swift; sourceTree = "<group>"; };
+		082F3FC9238BB58D00CEEE6A /* CameraView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CameraView.xib; path = CVLib/Classes/Views/Xib/CameraView.xib; sourceTree = "<group>"; };
 		2CF1720181108CAC64A4F0D4CD31AFFF /* CVLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CVLib-Info.plist"; sourceTree = "<group>"; };
 		2DA77364B9AF2659C7ADD7188DA8E60A /* Pods-CVLib_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CVLib_Tests.modulemap"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -99,6 +105,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		082F3FC3238BB46700CEEE6A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				082F3FC8238BB56300CEEE6A /* Xib */,
+				082F3FC4238BB51300CEEE6A /* PreviewView.swift */,
+				082F3FC6238BB54E00CEEE6A /* CameraView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		082F3FC8238BB56300CEEE6A /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				082F3FC9238BB58D00CEEE6A /* CameraView.xib */,
+			);
+			name = Xib;
+			sourceTree = "<group>";
+		};
 		2B12E2EF7CD73C12846D69E9310C8DCB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +140,7 @@
 		68C27796947148F05A9BB5D23B689CB2 /* CVLib */ = {
 			isa = PBXGroup;
 			children = (
+				082F3FC3238BB46700CEEE6A /* Views */,
 				80765BF07ED6C711D86E05FD245A1AF0 /* Pod */,
 				2B12E2EF7CD73C12846D69E9310C8DCB /* Support Files */,
 				0803E2BA238A5FA9004BA4B9 /* UIImageViewExtensions.swift */,
@@ -353,6 +378,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				082F3FCA238BB58D00CEEE6A /* CameraView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +406,8 @@
 			files = (
 				0803E2BB238A5FA9004BA4B9 /* UIImageViewExtensions.swift in Sources */,
 				0315D95BB0E86204889EFA173B2BD19B /* CVLib-dummy.m in Sources */,
+				082F3FC5238BB51300CEEE6A /* PreviewView.swift in Sources */,
+				082F3FC7238BB54E00CEEE6A /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +521,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CVLib/CVLib-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CVLib/CVLib-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CVLib/CVLib.modulemap";
 				PRODUCT_MODULE_NAME = CVLib;
@@ -526,7 +554,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CVLib/CVLib-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CVLib/CVLib-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CVLib/CVLib.modulemap";
 				PRODUCT_MODULE_NAME = CVLib;
@@ -590,7 +618,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -652,7 +680,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
